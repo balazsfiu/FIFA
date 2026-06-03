@@ -52,7 +52,7 @@ body{background:#0b0f14;color:white;font-family:Arial;margin:0;padding:20px}
 <body>
 
 <div class="scoreboard">
-🔴 Arsenal <span id="as">0</span> - <span id="ps">0</span> PSG 🔵
+Luxemburg <span id="as">0</span> - <span id="ps">0</span> Italy 
 <br><small>Perc: <span id="min">0</span></small><br><small id="pens" style="display:none">⚽ Büntetők: <span id="ap">0</span> - <span id="pp">0</span></small>
 </div>
 
@@ -249,9 +249,9 @@ function startSecondExtra(){
  upd();
 }
 
-const arsBench=["Jurriën Timber (#12)","Max Dowman (#56)","Riccardo Calafiori (#33)","Christian Nørgaard (#16)","Eberechi Eze (#10)","Mikel Merino (#23)","Noni Madueke (#20)","Martin Zubimendi (#36)","Kepa Arrizabalaga (#13)","Viktor Gyökeres (#14)", "Gabriel Martinelli (#11)", "Gabriel Jesus (#9)"];
+const arsBench=["Curci A. (#9)", "Duarte D. (#4)", "Duarte E. (#22)", "Fox L. (#23)", "Goncalves M. (#16)", "Kadamani H. (#20)", "Mahmutovic E. (#3)", "Muratovic E. (#11)", "Pereira Cardoso T. (#12)", "Selimovic V. (#5)", "Thill S. (#21)", "Veiga E. (#14)"];
 const benchCards={};
-const psgBench=["Lucas Chevalier (#30)","Lucas Hernández (#21)","Lucas Beraldo (#4)","Warren Zaïre-Emery (#33)","Kang-in Lee (#19)","Senny Mayulu (#24)","Bradley Barcola (#29)", "Ilya Zabarnyi (#6)", "Dro Fernández (#27)", "Ibrahim Mbaye (#49)", "Goncalo Ramos (#9)"];
+const psgBench=["Ahanor H. (#24)", "Berti T. (#14)", "Camarda F. (#8)", "Daffara G. (#12)", "Dagasso M. (#20)", "Ekhator J. (#18)", "Faticanti G. (#16)", "Fini S. (#17)", "Fortini N. (#25)", "Inacio S. (#19)", "Mane F. (#6)", "Palestra M. (#2)", "Palmisani L. (#23)", "Reggiani L. (#13)"];
 
 function player(name,team,bench,parent){
 
@@ -466,13 +466,13 @@ function startPenalties(){
  });
 }
 
-["David Raya (#1)","Cristhian Mosquera (#3)","William Saliba (#2)","Gabriel Magalhães (#6)","Piero Hincapié (#5)","Declan Rice (#41)","Myles Lewis-Skelly (#49)","Martin Ødegaard (#8)","Bukayo Saka (#7)","Leandro Trossard (#19)","Kai Havertz (#29)"].forEach(x=>player(x,"A",arsBench,ars));
-["Matvei Safonov (#39)","Achraf Hakimi (#2)","Marquinhos (#5)","Willian Pacho (#51)","Nuno Mendes (#25)","João Neves (#87)","Vitinha (#17)","Fabián Ruiz (#8)","Désiré Doué (#14)","Ousmane Dembélé (#10)","Khvicha Kvaratskhelia (#7)"].forEach(x=>player(x,"P",psgBench,psg));
+["Moris (#1)", "Korac (#2)", "Mica Pinto (#17)", "Carlson (#13)", "Bohnert (#7)", "de Sousa (#6)", "Olesen (#19)", "Niani (#10)", "Martins (#8)", "Jans (#18)", "Thill (#15)"].forEach(x=>player(x,"A",arsBench,ars));
+["Donarumma (#1)","Favasuli (#22)", "Pisilli (#21)", "Cherubini (#7)", "Comuzzo (#15)", "Lipani (#5)", "Esposito (#9)", "Chiarodia (#4)", "Ndour (#10)", "Koleosho (#11)", "Bartesaghi (#3)"].forEach(x=>player(x,"P",psgBench,psg));
 
 
 const arsMgr=document.createElement("h3"); arsMgr.textContent="Manager";
 ars.appendChild(arsMgr);
-staffMember("Mikel Arteta",ars);
+staffMember("Jeff Strasser",ars);
 
 const arsBenchTitle=document.createElement("h3"); arsBenchTitle.textContent="Cserejátékosok";
 ars.appendChild(arsBenchTitle);
@@ -480,7 +480,7 @@ arsBench.forEach(x=>staffMember(x,ars));
 
 const psgMgr=document.createElement("h3"); psgMgr.textContent="Manager";
 psg.appendChild(psgMgr);
-staffMember("Luis Enrique",psg);
+staffMember("Silvio Baldini",psg);
 
 const psgBenchTitle=document.createElement("h3"); psgBenchTitle.textContent="Cserejátékosok";
 psg.appendChild(psgBenchTitle);
