@@ -52,7 +52,7 @@ body{background:#0b0f14;color:white;font-family:Arial;margin:0;padding:20px}
 <body>
 
 <div class="scoreboard">
-France <span id="as">0</span> - <span id="ps">0</span> Ivory Coast
+Mexico <span id="as">0</span> - <span id="ps">0</span> South Africa
 <br><small>Perc: <span id="min">0</span></small><br><small id="pens" style="display:none">⚽ Büntetők: <span id="ap">0</span> - <span id="pp">0</span></small>
 </div>
 
@@ -81,8 +81,8 @@ France <span id="as">0</span> - <span id="ps">0</span> Ivory Coast
 </div>
 
 <div class="container">
-<div class="team"><h2>France</h2><div id="ars"></div></div>
-<div class="team"><h2>Ivory Coast</h2><div id="psg"></div></div>
+<div class="team"><h2>Mexico</h2><div id="ars"></div></div>
+<div class="team"><h2>South Africa</h2><div id="psg"></div></div>
 
 <div class="events">
 <h2>Eseménynapló</h2>
@@ -249,9 +249,9 @@ function startSecondExtra(){
  upd();
 }
 
-const arsBench=["Samba (#1)", "Risser (#23)", "Digne (#3)", "Hernández (#21)", "Gusto (#2)", "Lacroix (#26)", "Saliba (#17)", "Koné (#6)", "Kanté (#13)", "Zaïre-Emery (#18)", "Barcola (#12)", "Doué (#20)", "Mateta (#22)", "Aklouche (#25)", "Dembélé (#7)"];
+const arsBench=["Acevedo C. (#12)", "Alvarez E. (#4)", "Chavez Garcia M. (#20)", "Chavez L. (#24)", "Gimenez S. (#11)", "Gonzalez A. (#14)", "Huerta Valera C. S. (#21)", "Martinez G. (#22)", "Mora G. (#19)", "Ochoa G. (#13)", "Pineda O. (#17)", "Romo L. (#7)", "Sanchez J. (#2)", "Vargas O. (#18)", "Vega A. (#10)"];
 const benchCards={};
-const psgBench=["Lafont (#23)", "Mohamed Koné (#16)", "Koné (#16)", "Opéri (#13)", "Kossounou (#7)", "Diomande (#2)", "Diallo (#15)", "Oulai (#26)", "Sangaré (#18)", "Seri (#4)", "Pépé (#19)", "Bonny (#9)", "Touré (#24)", "Guessand (#22)", "Guiagon (#25)"];
+const psgBench=["Appollis O. (#7)", "Chaine S. (#16)", "Cross B. (#26)", "Goss R. (#22)", "Kabini S. (#18)", "Makgopa E. (#17)", "Makhanya O. (#24)", "Maseko T. (#12)", "Matuludi T. (#2)", "Mbatha T. (#5)", "Mofokeng R. (#10)", "Moremi T. (#8)", "Ndamane K. (#3)", "Sebelebele K. (#25)", "Zwane T. (#11)"];
 
 function player(name,team,bench,parent){
 
@@ -466,13 +466,13 @@ function startPenalties(){
  });
 }
 
-["Hernández (#19)", "Thuram (#9)", "Rabiot (#14)", "Konaté (#15)", "Maignan (#16)", "Cherki (#24)", "Mbappé (#10)", "Upamecano (#4)", "Tchouaméni (#8)", "Koundé (#5)", "Olise (#11)"].forEach(x=>player(x,"A",arsBench,ars));
-["Fofana (#1)", "Doué (#17)", "Diakité (#14)", "Adingra (#10)", "Agbadou (#20)", "Fofana (#6)", "Wahi (#12)", "Singo (#5)", "Kessié (#8)", "Diomande (#11)", "Konan (#3)"].forEach(x=>player(x,"P",psgBench,psg));
+["Rangel R. (#1)", "Reyes I. (#15)", "Montes C. (#3)", "Vasquez J. (#5)", "Gallardo J. (#23)", "Lira E. (#6)", "Alvarado R. (#25)", "Gutierrez B. (#26)", "Fidalgo A. (#8)", "Quinones J. (#16)", "Jimenez R. (#9)"].forEach(x=>player(x,"A",arsBench,ars));
+["Williams R. (#1)", "Mudau K. (#20)", "Okon I. (#21)", "Sibisi N. (#19)", "Mbokazi M. (#14)", "Modiba A. (#6)", "Mokoena T. (#4)", "Sithole Y. (#13)", "Adams J. (#23)", "Foster L. (#9)", "Rayners I. (#15)"].forEach(x=>player(x,"P",psgBench,psg));
 
 
 const arsMgr=document.createElement("h3"); arsMgr.textContent="Manager";
 ars.appendChild(arsMgr);
-staffMember("Didier Deschamps",ars);
+staffMember("Javier Aguirre",ars);
 
 const arsBenchTitle=document.createElement("h3"); arsBenchTitle.textContent="Cserejátékosok";
 ars.appendChild(arsBenchTitle);
@@ -480,7 +480,7 @@ arsBench.forEach(x=>staffMember(x,ars));
 
 const psgMgr=document.createElement("h3"); psgMgr.textContent="Manager";
 psg.appendChild(psgMgr);
-staffMember("Emerse Faé",psg);
+staffMember("Hugo Broos",psg);
 
 const psgBenchTitle=document.createElement("h3"); psgBenchTitle.textContent="Cserejátékosok";
 psg.appendChild(psgBenchTitle);
